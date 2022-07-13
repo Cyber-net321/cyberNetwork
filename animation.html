@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cyberNetwork</title>
+    <link rel="stylesheet" href="animation.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="nav" id="nav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="app/function.html">apps</a>
+            <a href="calculator/index.html.html">games</a>
+            <a href="animation.html">animations</a>
+            <a href="" class="sign">sign up</a>
+        </div>
+        <div class="spn">
+        <span onclick="openNav()" style="cursor: pointer; color: black;">&#9776;</span>
+        cyber.Net
+        <p id="date"></p>
+    </div>
+        <div class="content">
+            <h2>preview</h2>
+            <h1>animation projects</h1>
+            <div class="videoplayer" id="videoplayer">
+                <video controls autoplay id="myvideo">
+                    <source src="vid/1.MP4">
+                </video>
+                <span class="closevid" onclick="closevideo()">&times;</span>
+                <p class="list">cybertv</p>
+            </div>
+        
+            <div class="anim">
+               <div class="pics">
+                   <img src="pic/1.png" onclick="playvideo('vid/1.mp4')">
+               </div> 
+               <p>computer lab short animation</p>
+          
+        </div>
+        
+        <div class="anim">
+            <div class="pics">
+                <img src="pic/2.png" onclick="playvideo('vid/2.mkv')">
+            </div> 
+            <p>cybertel preview short animation</p>
+       
+     </div>
+     <div class="anim">
+        <div class="pics">
+            <img src="pic/3.png" onclick="playvideo('vid/3.mkv')">
+        </div> 
+        <p>phone display short animation</p>
+   
+ </div>
+ <div class="anim">
+    <div class="pics" onclick="playvideo('vid/4.mkv')">
+        <img src="pic/4.png">
+    </div> 
+    <p>house church short animation</p>
+
+</div>
+        </div>
+      
+        <div class="info">
+            <h3 class="cont">contacts</h3>
+            <p class="no">+255 62 316 5068<br>
+            <a href="" class="gm">cybernetwork@gmail.com</a><br>
+            <A href="" class="inst">The_real.cyber@instagram.com</A>
+            </p>
+        </div>
+    
+    
+
+    <script>
+        document.getElementById("date").innerHTML = Date();
+    
+        var videoplayer = document.getElementById("videoplayer");
+        var myvideo = document.getElementById("myvideo");
+
+        function closevideo(){
+            videoplayer.style.display = "none";
+        }
+
+        function playvideo(file){
+            myvideo.src = file;
+            videoplayer.style.display = "block";
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
